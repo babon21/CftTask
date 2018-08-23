@@ -135,7 +135,6 @@ public class MergeSort {
 
     private void writeSortedSubArray(int[] array, int length, File file)
             throws FileNotFoundException {
-        System.out.println("Write to File");
         PrintWriter printWriter = new PrintWriter(file);
         for (int i = 0; i < length; i++) {
             printWriter.println(array[i]);
@@ -145,7 +144,6 @@ public class MergeSort {
 
     private void writeSortedSubArray(String[] array, int length, File file)
             throws FileNotFoundException {
-        System.out.println("Write to File");
         PrintWriter printWriter = new PrintWriter(file);
         for (int i = 0; i < length; i++) {
             printWriter.println(array[i]);
@@ -164,7 +162,6 @@ public class MergeSort {
             forStrings(file);
         }
 
-        System.out.println("Sub files complete");
 
         File resultFile = null;
         String filename = file.getName();
